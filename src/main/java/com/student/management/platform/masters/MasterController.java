@@ -10,7 +10,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/v1/masters")
-class MasterController {
+final class MasterController {
 
   private final MasterService masterService;
 

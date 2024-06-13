@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component
-class DataInitializer implements CommandLineRunner {
+final class DataInitializer implements CommandLineRunner {
 
   @Value("${admin-pass}")
   private String adminPassword;

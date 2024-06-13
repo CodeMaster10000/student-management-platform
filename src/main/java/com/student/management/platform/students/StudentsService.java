@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
-class StudentsService {
+final class StudentsService {
 
   private final CustomPersistenceService<Student> customPersistenceService;
   private static final Logger logger = LoggerFactory.getLogger(StudentsService.class);

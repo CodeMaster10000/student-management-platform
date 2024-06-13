@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/security")
-class SecurityController {
+final class SecurityController {
 
   private final AuthenticationManagerBuilder authenticationManagerBuilder;
   private final JwtTokenProvider jwtTokenProvider;

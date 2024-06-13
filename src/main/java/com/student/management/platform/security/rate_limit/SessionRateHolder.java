@@ -12,7 +12,7 @@ import java.time.Instant;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-class SessionRateHolder implements Serializable {
+final class SessionRateHolder implements Serializable {
 
   private Instant firstRequest;
   Integer tokens;

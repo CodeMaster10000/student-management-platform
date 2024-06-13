@@ -20,7 +20,7 @@ class CaffeineCacheConfig {
     return cacheManager;
   }
 
-  Caffeine<Object, Object> cacheProperties() {
+  private static Caffeine<Object, Object> cacheProperties() {
     return Caffeine.newBuilder()
         .initialCapacity(100)
         .maximumSize(500)

@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.time.Duration;
 import java.time.Instant;
 
-class RateLimitFilter implements HandlerInterceptor {
+final class RateLimitFilter implements HandlerInterceptor {
 
   private final String targetMethod;
   private final Duration duration;

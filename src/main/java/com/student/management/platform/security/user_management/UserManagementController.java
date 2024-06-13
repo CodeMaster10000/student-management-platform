@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @RequestMapping("/api/v1/management")
-class UserManagementController {
+final class UserManagementController {
 
   private final UserManagementService managementService;
 

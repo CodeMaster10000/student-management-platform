@@ -14,7 +14,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "master")
-class Master {
+final class Master {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

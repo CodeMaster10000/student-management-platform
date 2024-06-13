@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-class CustomUserDetailService implements UserDetailsService {
+final class CustomUserDetailService implements UserDetailsService {
 
   private final ServiceUserRepository serviceUserRepository;
 

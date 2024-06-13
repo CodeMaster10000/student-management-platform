@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.time.Duration;
 import java.time.Instant;
 
-class IpAddressRateLimit implements HandlerInterceptor {
+final class IpAddressRateLimit implements HandlerInterceptor {
 
   private final CacheManager cacheManager;
   private final int maxRequests;

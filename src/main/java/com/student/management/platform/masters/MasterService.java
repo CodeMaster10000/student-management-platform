@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
-class MasterService {
+final class MasterService {
 
   private final CustomPersistenceService<Master> customPersistenceService;
   private final MasterRepository masterRepository;

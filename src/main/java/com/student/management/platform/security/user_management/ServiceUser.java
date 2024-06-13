@@ -13,7 +13,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-class ServiceUser {
+final class ServiceUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

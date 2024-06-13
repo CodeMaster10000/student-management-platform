@@ -1,17 +1,14 @@
 package com.student.management.platform.security.user_management;
 
 import com.student.management.platform.global.MasterException;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-class UserManagementService  {
+final class UserManagementService  {
 
-  @Value("${admin-pass}")
-  private String adminPassword;
   private final ServiceUserRepository serviceUserRepository;
   private final RoleRepository roleRepository;
   private final PasswordEncoder passwordEncoder;
@@ -26,7 +23,7 @@ class UserManagementService  {
 
 
   void createRole(String roleName) {
-    if (!roleRepository.findByName(roleName).isPresent()) {
+    if (roleRepository.findByName(roleName).isEmpty()) {
       Role role = new Role();
       role.setName(roleName);
       roleRepository.save(role);
@@ -36,7 +33,7 @@ class UserManagementService  {
   }
   void createUser(UserDTO userDTO) {
     String username = userDTO.name();
-    if (!serviceUserRepository.findByUsername(username).isPresent()) {
+    if (serviceUserRepository.findByUsername(username).isEmpty()) {
       ServiceUser user = new ServiceUser();
       user.setUsername(username);
       user.setPassword(passwordEncoder.encode(userDTO.password()));

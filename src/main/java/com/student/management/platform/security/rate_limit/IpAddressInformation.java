@@ -12,7 +12,7 @@ import java.time.Instant;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-class IpAddressInformation implements Serializable {
+final class IpAddressInformation implements Serializable {
 
   private Instant firstRequest;
   private Integer requestCount;

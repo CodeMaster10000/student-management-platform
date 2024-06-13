@@ -11,7 +11,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api/v1/students")
-class StudentReviewController {
+final class StudentReviewController {
 
   private final StudentsService studentsService;
 
@@ -38,11 +38,6 @@ class StudentReviewController {
       return new ResponseEntity<>("Unable to create new student", HttpStatus.INTERNAL_SERVER_ERROR);
     }
   }
-
-//  @PostMapping
-//  public void registerNewStudent() {
-//
-//  }
 
   @DeleteMapping("/{name}")
   public ResponseEntity<String> deleteStudent(@PathVariable("name") String name) {

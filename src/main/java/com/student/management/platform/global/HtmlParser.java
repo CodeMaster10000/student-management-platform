@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Component
-public class HtmlParser {
+public final class HtmlParser {
 
 
   public String parseHtml(String html) {

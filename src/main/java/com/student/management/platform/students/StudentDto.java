@@ -10,7 +10,7 @@ import java.util.Map;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-class StudentDto {
+final class StudentDto {
 
   private String name;
   private String gender;

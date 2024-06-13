@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 @Service
-class ScheduledIpAddressService {
+final class ScheduledIpAddressService {
 
   private final CacheManager cacheManager;
 

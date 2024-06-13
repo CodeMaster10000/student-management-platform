@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 import java.util.Objects;
 
 @Component
-public class ImagePersistenceService {
+public final class ImagePersistenceService {
 
   private static final String STORAGE_PATH = "/app/resources/";
 
