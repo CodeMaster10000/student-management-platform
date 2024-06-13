@@ -18,12 +18,12 @@ The Student Management Platform is a Spring Boot service designed to manage stud
     - Java 17
     - Spring Boot
     - Spring Security
-    - Spring Data JPA
+    - Spring Data JPA with SQLite
     - Azure Kubernetes Service (AKS)
     - Caffeine Cache
     - Rate Limiting Libraries (e.g., Bucket4j)
     - Facade Design Pattern
-    - Getting Started
+    - JWT Security
 
 
 ## Prerequisites
